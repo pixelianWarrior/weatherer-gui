@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>UsableMap.qml</file>
+        <file>InputArea.qml</file>
+        <file>InfoArea.qml</file>
+    </qresource>
+</RCC>

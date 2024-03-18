@@ -1,0 +1,38 @@
+import QtQuick 2.15
+
+Rectangle {
+    color: "#FF3FD4"
+    property bool infoAvailable
+
+    Text {
+        x:10
+        y:10
+        width:parent.width -20
+        text:"Solar Panels information:"
+        font.pixelSize: 30
+        visible: infoAvailable
+    }
+    
+    //info about solar panels and gardening will go here, gardening is collapsed into crops and can be expanded, requesting the info whenever its needed
+
+    Text {
+        x:10
+        y:10
+        width:parent.width -20
+        text: "Press calculate to see more info here"
+        wrapMode: Text.WordWrap
+        font.pixelSize: 30
+        visible: !infoAvailable
+    }
+    
+    
+
+    Component.onCompleted: {
+        infoAvailable = false
+    }
+
+    onInfoAvailableChanged: {
+
+    }
+
+}
